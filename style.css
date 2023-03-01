@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+
+--orange: hsl(26, 100%, 55%);
+--pale-orange: hsl(25, 100%, 94%);
+
+/* ### Neutral */
+
+--very-dark-blue: hsl(220, 13%, 13%);
+--dark-grayish-blue: hsl(219, 9%, 45%);
+--grayish-blue: hsl(220, 14%, 75%);
+--light-grayish-blue: hsl(223, 64%, 98%);
+--white: hsl(0, 0%, 100%);
+--black-opaque: hsl(0, 0%, 0%);
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grayish-blue);
+}
+
+header nav {
+   margin-left: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+header > div:nth-child(2) > figure:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.image_component {
+    width: 35%;
+}
+
+.image_component figure {
+    border-radius: 15px;
+}
+
+.image_component figure img {
+    border-radius: 15px;
+}
+
+.image_component > figure:first-child {
+    margin-bottom: 15px;
+}
+
+.show_case figure {
+    width: 20%;
+}
+
+.text_component {
+    width: 50%;
+}
+
+h4 {
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 10px 0 20px 0;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+.price_tag h3 {
+    font-size: 25px;
+}
+
+.price_tag span {
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    border-radius: 8px;
+}
+
+.price_tag div {
+    margin-bottom: 10px;
+}
+
+del {
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+}
+
+.add {
+    width: fit-content;
+    background: var(--light-grayish-blue);
+    padding: 10px 5px;
+}
+
+.add span {
+    margin: 0 35px;
+}
